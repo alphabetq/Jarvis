@@ -1,0 +1,30 @@
+﻿<Window x:Name="Jarvis" x:Class="Jarvis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:emgu="clr-namespace:Emgu.CV.UI;assembly=Emgu.CV.UI"
+        Title="Jarvis" Height="597" Width="910" Foreground="#FF635F5F" Loaded="Window_Loaded">
+    <Grid x:Name="imageGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/background.gif" Stretch="None"/>
+        </Grid.Background>
+
+        <TextBox x:Name="response" FontSize="18" Margin="513,428,0,0.2"  Background="{x:Null}" Foreground="White" BorderBrush="#FF1F588F" BorderThickness="2" />
+        <ListBox ScrollViewer.CanContentScroll="False" x:Name="log"  HorizontalAlignment="Left" Height="164" Margin="163,392,0,0" VerticalAlignment="Top" Width="332" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" TabIndex="2147483641" />
+
+        <Label Content="Weather" HorizontalAlignment="Left" Margin="694,57,0,0" VerticalAlignment="Top" Width="96" FontSize="16" Grid.IsSharedSizeScope="True" FontWeight="ExtraBold" Foreground="#FFFDF7F7" ForceCursor="True" RenderTransformOrigin="0.329,0.443"/>
+        <Label x:Name="High" Content="High:" HorizontalAlignment="Left" Margin="707,94,0,0" VerticalAlignment="Top" Width="153" Foreground="#FFF9F9F9"/>
+        <Label x:Name="Low" Content="Low:" HorizontalAlignment="Left" Margin="707,120,0,0" VerticalAlignment="Top" Width="153" Foreground="#FFFBF9F9"/>
+        <Label x:Name="Current" Content="Current Condition:" HorizontalAlignment="Left" Margin="707,151,0,0" VerticalAlignment="Top" Width="166" Foreground="#FFF5F1F1"/>
+        <Label x:Name="Time" Content="12:22 PM" HorizontalAlignment="Left" Margin="679,22,0,0" VerticalAlignment="Top" Height="41" Width="168" Foreground="#FF1F588F" BorderThickness="0,3,0,0" FontSize="18" FontWeight="SemiBold" HorizontalContentAlignment="Center" FontFamily="OCR A Std"/>
+        <TextBox x:Name="Input" HorizontalAlignment="Left" Height="23" Margin="173,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Cursor="None" Background="#FF21578E" BorderBrush="{x:Null}" Foreground="White" KeyDown="OnKeyDownHandler" />
+        <Button x:Name="inputButton" Content="Send" HorizontalAlignment="Left" Margin="409,348,0,0" VerticalAlignment="Top" Width="75" Background="#FF1A4D7C" Foreground="White" BorderBrush="#FF21578E" Height="23" Click="inputButton_Click"/>
+        <ListBox ScrollViewer.CanContentScroll="False" x:Name="tweetlog"  HorizontalAlignment="Left" Height="129" Margin="513,428,0,0" VerticalAlignment="Top" Width="381" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" TabIndex="2147483641" />
+        <Label Content="Twitter" HorizontalAlignment="Left" Margin="513,396,0,0" VerticalAlignment="Top" Width="96" FontSize="16" Grid.IsSharedSizeScope="True" FontWeight="ExtraBold" Foreground="#FFFDF7F7" ForceCursor="True"/>
+        <Image x:Name="WeatherIcon" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="823,96,0,0" Source="Images/jarvis_rotator_by_yash1331-d6hcqa3.png"/>
+        <Image x:Name="image1" Margin="748,248,0,211.2" />
+        <Label Content="Live Camera" HorizontalAlignment="Left" Margin="756,211,0,0" VerticalAlignment="Top" Width="117" FontSize="16" Grid.IsSharedSizeScope="True" FontWeight="ExtraBold" Foreground="#FFFDF7F7" ForceCursor="True" RenderTransformOrigin="0.329,0.443"/>
+        <Label x:Name="battery" Content="" HorizontalAlignment="Left" Margin="20,330,0,0" VerticalAlignment="Top" Width="105" Foreground="#FFF5F1F1" Height="91" FontWeight="Bold" FontSize="32"/>
+        <Image Source="/Images/battery.png" HorizontalAlignment="Left" Height="28" Margin="15,297,0,0" VerticalAlignment="Top" Width="33"/>
+    </Grid>
+</Window>
+
