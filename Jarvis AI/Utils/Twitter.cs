@@ -18,7 +18,7 @@ namespace Jarvis.Utils
         //public static string LatestTweet = "";
         public static List<string> LatestTweet = new List<string>();
         public static String firstLoad;
-        public static String changeTweet = "alphabetqqq";
+        public static String changeTweet = "elonmusk";
         public static String language = "en";
 
         public void TwitterLoad(MainWindow main)
