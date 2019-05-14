@@ -49,3 +49,6 @@
 3. Install Microsoft Visual Studio 2017.
 4. Get your own YoutubeAPI and Twitter Developer API credentials and paste them on [`YoutubeAPI.cs`](https://github.com/alphabetq/Jarvis-AI/blob/master/Jarvis%20AI/Utils/YoutubeAPI.cs) and [`Twitter.cs`](https://github.com/alphabetq/Jarvis-AI/blob/master/Jarvis%20AI/Utils/Twitter.cs) respectively.
 
+### Credits:
+
+This project was inspired by [@nickivey](https://github.com/nickivey)'s project, check it out [here](https://github.com/nickivey/Jarvis).
