@@ -47,7 +47,7 @@
 
 ### Installation:
 
-1. Install [`NirCmd`](https://www.nirsoft.net/utils/nircmd.html)
+1. Install [`NirCmd`](https://www.nirsoft.net/utils/nircmd.html).
 2. Install IVONA 2 Brian or use any other language packs.
 3. Install Microsoft SQL Server Management Studio 2012 and restore the [`Jarvis_DB.bak`](https://github.com/alphabetq/Jarvis-AI/blob/master/Jarvis_DB.bak) database file.
 4. Install Microsoft Visual Studio 2017.
